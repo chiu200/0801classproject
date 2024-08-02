@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+}
+
+.text {
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.textbox {
+    width: 360px;
+    /* border: 1px solid goldenrod; */
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p {
+    text-align: left;
+    font-size: 16px;
+}
+
+h2 {
+    color: red;
+}
+
+.slogan {
+    background-color: red;
+    text-align: center;
+}
+
+.slogan h2 {
+    font-size: 35px;
+    color: #fff;
+}
+
+.reCommand h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(1, 109, 1);
+}
+
+/* 課程介紹最外層 */
+.classcontent {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 課程介紹內部群組 */
+.classbox {
+    width: 300px;
+    /* 外框陰影 */
+    text-align: center;
+    box-shadow: 0 0 10px;
+    color: #0000008a;
+    /* 框線內側增加留白區 */
+    padding: 20px;
+}
+
+/* 課程介紹內部中的圖片 */
+.classbox img {
+    width: 100%;
+}
+
+.classbox h3 {
+    font-size: 2rem;
+    color: black;
+}
+
+.classbox .p-blue {
+    color: rgb(62, 62, 255);
+    text-align: justify;
+}
+
+.classbox p span {
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+}
+
+.classbox .p-center {
+    text-align: center;
+}
+
+.classbox .div-center a {
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+.classbox .div-center{
+    text-align: center;
+}
+
+.classbox .div-center a:hover {
+    background-color: rgb(108, 0, 0);
+}
+
+.classbox button:hover{
+    /* become hand */
+    cursor: pointer;
+    /* change bg color */
+    background-color: rgb(108, 0, 0);
+}
+
+/* 響應式小尺寸變化 */
+@media (max-width:639px){
+    #wrap{
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .banner img{
+        width: 100%;
+    }
+
+    /* 標題文字區堆疊排列 */
+    .text{
+        /* 維持flex特性，只是改變方向 */
+        /* flex-direction: column; */
+
+        /* 純粹堆疊排列 */
+        display: block;
+        width: 80%;
+    }
+    .textbox{
+        width: 80%;
+        margin: auto;
+    }
+
+    .classcontent{
+        display: block;
+        width: 90%;
+    }
+    .classbox{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
